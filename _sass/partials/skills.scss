@@ -12,16 +12,28 @@
         width: 50%;
         padding-bottom: 15px;
 
+        @include tablet {
+            width: 25%;
+        }
+
         &__label {
             font-weight: 400;
             font-size: 1em;
             text-wrap: nowrap;
+
+            @include laptop {
+                padding-bottom: 5px;
+            }
         }
 
         &__item {
             font-weight: 200;
             font-size: 0.8em;
             word-wrap: no-wrap;
+
+            @include laptop {
+                // font-size: 1em;
+            }
         }
     }
 }

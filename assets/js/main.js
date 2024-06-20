@@ -29,5 +29,9 @@ function waveOnLoad() {
     }, 5000)
 }
 
+// setTimeout(() => {
+//     document.getElementById("down_arrow").classList.add("hidden");
+// }, 15000)
+
 setTimeout(typeWriter, 1000);
 setTimeout(waveOnLoad, 1000);

@@ -24,27 +24,37 @@ body {
     padding: 50px;
 
     @include tablet {
-        padding: 20px;
+        padding: 50px 85px;
     }
 
     @include laptop {
-        padding: 30px;
-    }
-
-    @include desktop {
-        padding: 40px;
+        padding: 30px 100px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
     }
 
     @include xl {
-        padding: 200px;
+        padding: 45px 150px;
     }
 
     &__title {
         font-size: 1.75em;
         font-weight: 500;
         margin-left: -15px;
-        padding-bottom: 10px;
+        padding-bottom: 20px;
         color: $cyan-dark-highlight;
+
+        @include laptop {
+            padding-bottom: 0;
+            margin-left: 0;
+            font-weight: 400;
+        }
+
+        @include desktop {
+            width: 15%;
+            text-align: right;
+        }
     }
 
     &__content {
@@ -52,8 +62,17 @@ body {
         line-height: 1.5;
         font-size: 1.2em;
 
+        @include laptop {
+            width: 75%;
+            padding-bottom: 40px;
+        }
+
         &__highlight {
             font-weight: 500;
         }
     }
+}
+
+.hidden {
+    visibility: hidden !important;
 }

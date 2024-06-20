@@ -1,0 +1,9 @@
+@import 'partials/globals';
+
+.background {
+    p {
+        @include laptop {
+            font-size: 0.9em;
+        }
+    }
+}

@@ -13,23 +13,25 @@
     font-size: 1em;
 
     @include tablet {
-        padding: 20px;
-        font-size: 2em;
+        padding: 100px 85px;
+        font-size: 1em;
+        justify-content: space-evenly;
     }
 
     @include laptop {
-        padding: 30px;
-        font-size: 2.5em;
+        padding: 0px 350px 0px 85px;
+        font-size: 1em;
     }
 
     @include desktop {
-        padding: 40px;
-        font-size: 3em;
+        padding: 0px 350px 0px 185px;
+        font-size: 1em;
     }
 
     @include xl {
         padding: 200px;
         font-size: 1em;
+        justify-content: space-evenly;
     }
 
 
@@ -96,6 +98,34 @@
 
         100% {
             transform: rotate(0deg);
+        }
+    }
+
+    .down_arrow {
+        display: flex;
+        justify-content: center;
+        color: $cyan-highlight;
+        font-size: 2em;
+        margin-top: 35px;
+
+    }
+
+    .bouncing {
+        animation: bounce 3s 15;
+    }
+
+    @keyframes bounce {
+
+        0% {
+            transform: translateY(0);
+        }
+
+        50% {
+            transform: translateY(20px);
+        }
+
+        100% {
+            transform: translateY(0);
         }
     }
 }
