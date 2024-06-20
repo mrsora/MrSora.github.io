@@ -39,6 +39,12 @@
         display: inline-flex;
         flex-direction: row;
         justify-content: flex-start;
+
+    }
+
+    &__placeholder {
+        visibility: hidden;
+        justify-self: end;
     }
 
     &__name {
@@ -51,9 +57,11 @@
         font-weight: 300;
 
         &__link {
-            color: darkcyan;
+            color: $cyan-highlight;
             text-decoration: underline;
             text-underline-offset: 10px;
+            text-decoration-line: underline;
+            text-decoration-thickness: 2px;
         }
     }
 

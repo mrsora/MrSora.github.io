@@ -45,7 +45,7 @@ body {
   font-weight: 500;
   margin-left: -15px;
   padding-bottom: 10px;
-  color: #1C808C;
+  color: #00A6A6;
 }
 .section__content {
   font-weight: 300;
@@ -97,17 +97,23 @@ body {
   flex-direction: row;
   justify-content: flex-start;
 }
+.intro__placeholder {
+  visibility: hidden;
+  justify-self: end;
+}
 .intro__name {
   font-weight: 600;
-  color: #1C808C;
+  color: #00A6A6;
 }
 .intro__brief, .intro__contact {
   font-weight: 300;
 }
 .intro__brief__link, .intro__contact__link {
-  color: darkcyan;
+  color: #00A6A6;
   text-decoration: underline;
   text-underline-offset: 10px;
+  text-decoration-line: underline;
+  text-decoration-thickness: 2px;
 }
 .intro .waving {
   animation: wave 2s infinite;
@@ -195,4 +201,19 @@ body {
 
 .resume_CTE {
   font-weight: 500;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
 }
+.resume_CTE__link {
+  text-decoration: underline;
+  text-underline-offset: 10px;
+  text-decoration-line: underline;
+  text-decoration-thickness: 2px;
+  color: #00A6A6;
+}
+.resume_CTE .chevron_forward {
+  color: #00A6A6;
+}
+
+/*# sourceMappingURL=styles.css.map */

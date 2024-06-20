@@ -43,4 +43,19 @@
 
 .resume_CTE {
     font-weight: 500;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+
+    &__link {
+        text-decoration: underline;
+        text-underline-offset: 10px;
+        text-decoration-line: underline;
+        text-decoration-thickness: 2px;
+        color: $cyan-highlight;
+    }
+
+    .chevron_forward {
+        color: $cyan-highlight;
+    }
 }
