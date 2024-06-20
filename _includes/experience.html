@@ -1,0 +1,25 @@
+<section class="section experience">
+    <div class="section__title">Experience</div>
+    <div class="section__content">
+        <div class="jobs">
+            {% for job in site.data.experience.jobs %}
+            <div class="job">
+                <div class="job__header">
+                    <div class="job__company">{{job.company}}</div>
+                    <div class="job__date">{{job.date}}</div>
+                </div>
+                <div class="job__content">
+                    <div class="job__title">{{job.title}}</div>
+                    <div class="job__description">{{job.description}}</div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+
+        <!-- call to action -->
+        <div class="resume_CTE">
+            View my complete resume 📑
+            <!-- TODO: include arrow indicating opening link -->
+        </div>
+    </div>
+</section>

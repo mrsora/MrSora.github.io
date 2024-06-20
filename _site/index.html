@@ -1,21 +1,237 @@
 <!doctype html>
-<html>
+<html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <title>Home</title>
-    <link rel="stylesheet" href="/assets/css/styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8">
+<link rel="stylesheet" href="../assets/css/styles.css">
+<script defer src="../assets/js/main.js"></script>
+<title>Home</title>
+
 </head>
 
 <body>
-    <nav>
-    
-    <a href="/" class="current" >Home</a>
-    
-    <a href="/about" >About</a>
-    
-</nav>
-    <h1>hello world!</h1>
+    <div id="site" onload="typeWriter()">
+    <header class="intro">
+    <h1 class="intro__hello">
+        <div id="intro_typewriter"> </div>
+        <div id="intro_hand_wave"></div>
+    </h1>
+
+
+    <h2 class="intro__brief">
+        I'm <span class="intro__name">Darren</span>, a recently graduated full-stack software engineer that loves to
+        build things.
+    </h2>
+
+    <h3 class="intro__contact">
+        Let's talk! <a class="intro__contact__link" href="mailto:darren.wxc@gmail.com">darren.wxc@gmail.com</a>
+    </h3>
+
+    <!-- TODO: include a scroll down arrow here -->
+</header>
+    <section class="section background">
+    <div class="section__title">Who Am I?</div>
+    <div class="section__content">
+        <p>
+            I'm a recent graduate from the <span class="section__content__highlight">University of Alberta</span> with a
+            B.Sc. in Computer Science. During that time, I had the pleasure of experiencing an 8 month internship with
+            Farmlink Marketing Solutions, with whom I contributed as a Junior Software Developer for another 8 months
+            after.
+        </p>
+        <p>
+            As a software engineer, I've always enjoyed being hands on and building things, from attemping LeetCode
+            problems, working on personal projects, to tinkering with PC parts.
+        </p>
+        <p>
+            <span class="section__content__highlight">Away from my computer</span>, I'm probably hiking in Banff, paddle
+            boarding down the Elbow river, or taking naps with
+            my cat, Kimchi.
+        </p>
+    </div>
+</section>
+    <section class="section">
+    <div class="section__title">Skills</div>
+    <div class="section__content">
+        <!-- start skills -->
+        <div class="skills">
+            <div class="skills__category">
+                <div class="skills__category__label">
+                    Languages
+                </div>
+                
+                <div class="skills__category__item">
+                    Python
+                </div>
+                
+                <div class="skills__category__item">
+                    JavaScript
+                </div>
+                
+                <div class="skills__category__item">
+                    TypeScript
+                </div>
+                
+                <div class="skills__category__item">
+                    C++
+                </div>
+                
+                <div class="skills__category__item">
+                    Java
+                </div>
+                
+                <div class="skills__category__item">
+                    HTML5 / Sass
+                </div>
+                
+                <div class="skills__category__item">
+                    SQL
+                </div>
+                
+            </div>
+
+            <div class="skills__category">
+                <div class="skills__category__label">
+                    Frameworks
+                </div>
+                
+                <div class="skills__category__item">
+                    Django
+                </div>
+                
+                <div class="skills__category__item">
+                    Flask
+                </div>
+                
+                <div class="skills__category__item">
+                    Vue.js
+                </div>
+                
+                <div class="skills__category__item">
+                    .NET Core
+                </div>
+                
+                <div class="skills__category__item">
+                    .NET Framework
+                </div>
+                
+            </div>
+
+            <div class="skills__category">
+                <div class="skills__category__label">
+                    Databases
+                </div>
+                
+                <div class="skills__category__item">
+                    PostgreSQL
+                </div>
+                
+                <div class="skills__category__item">
+                    SQLite
+                </div>
+                
+                <div class="skills__category__item">
+                    MySQL
+                </div>
+                
+                <div class="skills__category__item">
+                    SQL Server
+                </div>
+                
+                <div class="skills__category__item">
+                    MongoDB
+                </div>
+                
+                <div class="skills__category__item">
+                    Google Firebase
+                </div>
+                
+            </div>
+
+            <div class="skills__category">
+                <div class="skills__category__label">
+                    Development Tools
+                </div>
+                
+                <div class="skills__category__item">
+                    GitHub, Azure DevOps
+                </div>
+                
+                <div class="skills__category__item">
+                    Docker (Compose)
+                </div>
+                
+                <div class="skills__category__item">
+                    Visual Studio
+                </div>
+                
+                <div class="skills__category__item">
+                    Android Studio
+                </div>
+                
+                <div class="skills__category__item">
+                    Atlassian Suite
+                </div>
+                
+                <div class="skills__category__item">
+                    Apache JMeter
+                </div>
+                
+                <div class="skills__category__item">
+                    SonarQube
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</section>
+    <section class="section experience">
+    <div class="section__title">Experience</div>
+    <div class="section__content">
+        <div class="jobs">
+            
+            <div class="job">
+                <div class="job__header">
+                    <div class="job__company">FarmLink Marketing Solutions</div>
+                    <div class="job__date">Sept 2022 - May 2023</div>
+                </div>
+                <div class="job__content">
+                    <div class="job__title">Junior Software Engineer</div>
+                    <div class="job__description">Retained upon completion of internship, continued to contribute as a full stack developer, building frontend interfaces with Vue.js and backend logic with Python, with more focus on planning and developing backend APIs. Updated and maintained CI/CD GitHub Actions pipeline and Docker containers for development. Wrote well documented and well tested code, with 90%+ code coverage on all contributions.</div>
+                </div>
+            </div>
+            
+            <div class="job">
+                <div class="job__header">
+                    <div class="job__company">FarmLink Marketing Solutions</div>
+                    <div class="job__date">Sept 2022 - May 2023</div>
+                </div>
+                <div class="job__content">
+                    <div class="job__title">Co-op Software Developer</div>
+                    <div class="job__description">Contributed in the capacity of a full stack developer, working mainly in the frontend, building user interfaces with JavaScript using Vue.js and implementing backend logic in Django using Python. Participated in Agile environment, daily scrum meetings, biweekly sprints, and sprint planning meetings and took part in ensemble and pair programming sessions and code reviews.</div>
+                </div>
+            </div>
+            
+            <div class="job">
+                <div class="job__header">
+                    <div class="job__company">Benchmark International</div>
+                    <div class="job__date">July 2021 - Jan 2022</div>
+                </div>
+                <div class="job__content">
+                    <div class="job__title">Digital Consultant / Software Developer</div>
+                    <div class="job__description">Designing and developing a web application that allows for the access of information in a PEDYN/Microsoft Access database from a smartphone, tablet, made using .NET Core MVC. Redesigning and updating company websites to support inbound marketing using SEO methods.</div>
+                </div>
+            </div>
+            
+        </div>
+
+        <!-- call to action -->
+        <div class="resume_CTE">
+            View my complete resume 📑
+            <!-- TODO: include arrow indicating opening link -->
+        </div>
+    </div>
+</section>
+</div>
 </body>
 
 </html>

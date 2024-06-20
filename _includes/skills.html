@@ -1,0 +1,51 @@
+<section class="section">
+    <div class="section__title">Skills</div>
+    <div class="section__content">
+        <!-- start skills -->
+        <div class="skills">
+            <div class="skills__category">
+                <div class="skills__category__label">
+                    Languages
+                </div>
+                {% for language in site.data.skills.languages %}
+                <div class="skills__category__item">
+                    {{language.item}}
+                </div>
+                {% endfor %}
+            </div>
+
+            <div class="skills__category">
+                <div class="skills__category__label">
+                    Frameworks
+                </div>
+                {% for framework in site.data.skills.frameworks %}
+                <div class="skills__category__item">
+                    {{framework.item}}
+                </div>
+                {% endfor %}
+            </div>
+
+            <div class="skills__category">
+                <div class="skills__category__label">
+                    Databases
+                </div>
+                {% for database in site.data.skills.databases %}
+                <div class="skills__category__item">
+                    {{database.item}}
+                </div>
+                {% endfor %}
+            </div>
+
+            <div class="skills__category">
+                <div class="skills__category__label">
+                    Development Tools
+                </div>
+                {% for tool in site.data.skills.development_tools %}
+                <div class="skills__category__item">
+                    {{tool.item}}
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</section>

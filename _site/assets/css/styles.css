@@ -1,5 +1,198 @@
-.current {
-  color: green;
+html {
+  box-sizing: border-box;
 }
 
-/*# sourceMappingURL=styles.css.map */
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+html,
+body {
+  margin: 0;
+  background-color: #FFFFFF;
+  font-family: "Raleway Light", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  padding: 0;
+  width: 100%;
+}
+
+.section {
+  padding: 50px;
+}
+@media (min-width: 500px) {
+  .section {
+    padding: 20px;
+  }
+}
+@media (min-width: 768px) {
+  .section {
+    padding: 30px;
+  }
+}
+@media (min-width: 1024px) {
+  .section {
+    padding: 40px;
+  }
+}
+@media (min-width: 1440px) {
+  .section {
+    padding: 200px;
+  }
+}
+.section__title {
+  font-size: 1.75em;
+  font-weight: 500;
+  margin-left: -15px;
+  padding-bottom: 10px;
+  color: #1C808C;
+}
+.section__content {
+  font-weight: 300;
+  line-height: 1.5;
+  font-size: 1.2em;
+}
+.section__content__highlight {
+  font-weight: 500;
+}
+
+.intro {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 100px 65px;
+  font-size: 1em;
+}
+@media (min-width: 500px) {
+  .intro {
+    padding: 20px;
+    font-size: 2em;
+  }
+}
+@media (min-width: 768px) {
+  .intro {
+    padding: 30px;
+    font-size: 2.5em;
+  }
+}
+@media (min-width: 1024px) {
+  .intro {
+    padding: 40px;
+    font-size: 3em;
+  }
+}
+@media (min-width: 1440px) {
+  .intro {
+    padding: 200px;
+    font-size: 1em;
+  }
+}
+.intro__hello {
+  font-weight: 400;
+  text-wrap: nowrap;
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.intro__name {
+  font-weight: 600;
+  color: #1C808C;
+}
+.intro__brief, .intro__contact {
+  font-weight: 300;
+}
+.intro__brief__link, .intro__contact__link {
+  color: darkcyan;
+  text-decoration: underline;
+  text-underline-offset: 10px;
+}
+.intro .waving {
+  animation: wave 2s infinite;
+}
+@keyframes wave {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(10deg);
+  }
+  20% {
+    transform: rotate(-10deg);
+  }
+  30% {
+    transform: rotate(10deg);
+  }
+  40% {
+    transform: rotate(-10deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.skills__category {
+  display: inline-block;
+  width: 50%;
+  padding-bottom: 15px;
+}
+.skills__category__label {
+  font-weight: 400;
+  font-size: 1em;
+  text-wrap: nowrap;
+}
+.skills__category__item {
+  font-weight: 200;
+  font-size: 0.8em;
+  word-wrap: no-wrap;
+}
+
+.jobs {
+  display: flex;
+  flex-direction: column;
+}
+.jobs .job__header {
+  font-size: 1em;
+  font-weight: 400;
+  padding-bottom: 10px;
+}
+@media (min-width: 500px) {
+  .jobs .job__header {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-between;
+  }
+}
+.jobs .job__date {
+  color: #404040;
+  font-weight: 200;
+  font-style: italic;
+  font-size: 0.8em;
+}
+.jobs .job__content {
+  padding-bottom: 2em;
+}
+.jobs .job__title {
+  font-size: 0.9em;
+  font-weight: 300;
+}
+.jobs .job__description {
+  padding-top: 1em;
+  font-size: 0.8em;
+}
+
+.resume_CTE {
+  font-weight: 500;
+}

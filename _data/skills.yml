@@ -1,0 +1,44 @@
+languages:
+  - item: Python
+  - item: JavaScript
+  - item: TypeScript
+  - item: C++
+  - item: Java
+  - item: HTML5 / Sass
+  - item: SQL
+
+frameworks:
+  - item: Django
+  - item: Flask
+  - item: Vue.js
+  - item: .NET Core
+  - item: .NET Framework
+
+databases:
+  - item: PostgreSQL
+  - item: SQLite
+  - item: MySQL
+  - item: SQL Server
+  - item: MongoDB
+  - item: Google Firebase
+
+development_tools:
+  - item: GitHub, Azure DevOps
+  - item: Docker (Compose)
+  - item: Visual Studio
+  - item: Android Studio
+  - item: Atlassian Suite
+  - item: Apache JMeter
+  - item: SonarQube
+
+# libraries:
+#   - item: NumPy
+#   - item: Pandas
+#   - item: scikit-learn
+#   - item: scikit-image
+#   - item: tkinter
+#   - item: Bootstrap
+
+# testing:
+#   - item: Pytest
+#   - item: Jest

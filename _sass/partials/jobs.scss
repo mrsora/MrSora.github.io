@@ -1,0 +1,46 @@
+@import 'partials/globals';
+
+.jobs {
+    display: flex;
+    flex-direction: column;
+
+    .job {
+        &__header {
+            font-size: 1em;
+            font-weight: 400;
+            padding-bottom: 10px;
+
+            @include tablet {
+                display: flex;
+                flex-direction: row;
+                align-content: center;
+                justify-content: space-between;
+            }
+        }
+
+        &__date {
+            color: $secondary-text;
+            font-weight: 200;
+            font-style: italic;
+            font-size: 0.8em;
+        }
+
+        &__content {
+            padding-bottom: 2em;
+        }
+
+        &__title {
+            font-size: 0.9em;
+            font-weight: 300;
+        }
+
+        &__description {
+            padding-top: 1em;
+            font-size: 0.8em;
+        }
+    }
+}
+
+.resume_CTE {
+    font-weight: 500;
+}

@@ -2,4 +2,9 @@
 layout: default
 title: Home
 ---
-<h1>{{ "Hello World!" | downcase }}</h1>
+<div id="site" onload="typeWriter()">
+    {% include introduction.html %}
+    {% include background.html %}
+    {% include skills.html %}
+    {% include experience.html %}
+</div>

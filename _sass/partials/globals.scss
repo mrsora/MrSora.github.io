@@ -1,0 +1,47 @@
+$cream: #F9F7F7;
+$light-grey: #DBE2EF;
+$light-blue: #3F72AF;
+$navy: #112D4E;
+
+$background-color-light: #FFFFFF;
+$background-color-dark: #1A2130;
+
+$secondary-text: #404040;
+$cyan-highlight: #00A6A6;
+$cyan-dark-highlight: #1C808C;
+
+// display breakpoints
+$x-sm: 450px;
+$sm: 500px;
+$md: 768px;
+$lg: 1024px;
+$xl: 1440px;
+
+// display mixins
+
+@mixin tablet {
+    @media (min-width: #{$sm}) {
+        // and (max-width: #{$md - 1}) 
+        @content;
+    }
+}
+
+@mixin laptop {
+    @media (min-width: #{$md}) {
+        // and (max-width: #{$lg - 1})
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media (min-width: #{$lg}) {
+        // and (max-width: #{$xl - 1}) 
+        @content;
+    }
+}
+
+@mixin xl {
+    @media (min-width: #{$xl}) {
+        @content;
+    }
+}

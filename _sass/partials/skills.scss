@@ -1,0 +1,27 @@
+@import 'partials/globals';
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    // margin: 0 -15px;
+
+    &__category {
+        display: inline-block;
+        width: 50%;
+        padding-bottom: 15px;
+
+        &__label {
+            font-weight: 400;
+            font-size: 1em;
+            text-wrap: nowrap;
+        }
+
+        &__item {
+            font-weight: 200;
+            font-size: 0.8em;
+            word-wrap: no-wrap;
+        }
+    }
+}
