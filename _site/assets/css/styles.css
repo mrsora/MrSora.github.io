@@ -27,7 +27,7 @@ body {
 }
 @media (min-width: 860px) {
   .section {
-    padding: 30px 100px;
+    padding: 75px 100px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -35,7 +35,7 @@ body {
 }
 @media (min-width: 1441px) {
   .section {
-    padding: 45px 150px;
+    padding: 75px 150px;
   }
 }
 .section__title {

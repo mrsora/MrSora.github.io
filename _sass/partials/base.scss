@@ -28,14 +28,14 @@ body {
     }
 
     @include laptop {
-        padding: 30px 100px;
+        padding: 75px 100px;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
     }
 
     @include xl {
-        padding: 45px 150px;
+        padding: 75px 150px;
     }
 
     &__title {

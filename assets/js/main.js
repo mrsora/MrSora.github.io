@@ -29,9 +29,10 @@ function waveOnLoad() {
     }, 5000)
 }
 
-// setTimeout(() => {
-//     document.getElementById("down_arrow").classList.add("hidden");
-// }, 15000)
+ScrollReveal().reveal('.background', { delay: 400 })
+ScrollReveal().reveal('.skills_section', { delay: 400 })
+ScrollReveal().reveal('.experience', { delay: 400 })
+
 
 setTimeout(typeWriter, 1000);
 setTimeout(waveOnLoad, 1000);
