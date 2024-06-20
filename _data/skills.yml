@@ -2,29 +2,30 @@ languages:
   - item: Python
   - item: JavaScript
   - item: TypeScript
+  - item: HTML5 / Sass
+  - item: SQL / NoSQL
   - item: C++
   - item: Java
-  - item: HTML5 / Sass
-  - item: SQL
 
 frameworks:
   - item: Django
   - item: Flask
   - item: Vue.js
+  - item: Next.js
   - item: .NET Core
   - item: .NET Framework
 
 databases:
-  - item: PostgreSQL
-  - item: SQLite
   - item: MySQL
+  - item: SQLite
   - item: SQL Server
+  - item: PostgreSQL
   - item: MongoDB
   - item: Google Firebase
 
 development_tools:
   - item: GitHub, Azure DevOps
-  - item: Docker (Compose)
+  - item: Docker
   - item: Visual Studio
   - item: Android Studio
   - item: Atlassian Suite
