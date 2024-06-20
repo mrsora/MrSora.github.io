@@ -258,6 +258,22 @@ body {
   padding-top: 1em;
   font-size: 0.8em;
 }
+.jobs .job .chips {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  font-size: 0.7em;
+  font-weight: 400;
+  padding-top: 1em;
+}
+.jobs .job .chips .chip {
+  margin: 1px 5px 1px 0px;
+  border: 1px dashed #00A6A6;
+  border-radius: 5px;
+  padding: 2px 3px;
+  color: #00A6A6;
+}
 
 .resume_CTE {
   font-weight: 500;

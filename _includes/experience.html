@@ -10,6 +10,11 @@
                 </div>
                 <div class="job__content">
                     <div class="job__title">{{job.title}}</div>
+                    <div class="chips">
+                        {% for tech in job.technologies %}
+                        <div class="chip">{{tech.item}}</div>
+                        {% endfor %}
+                    </div>
                     <div class="job__description">{{job.description}}</div>
                 </div>
             </div>
