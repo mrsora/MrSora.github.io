@@ -11,7 +11,7 @@ frameworks:
   - item: Django
   - item: Flask
   - item: Vue.js
-  - item: Next.js
+  - item: React
   - item: .NET Core
   - item: .NET Framework
 
